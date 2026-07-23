@@ -1,0 +1,6 @@
+# (A/M*100 + B/M*100 + C/M*100 -> (A+B+C) * 100 / M / 3)
+n = int(input())
+n_list = list(map(int, input().split()))
+n_max = max(n_list)
+n_sum = sum(n_list)
+print(n_sum * 100 / n_max / n)
