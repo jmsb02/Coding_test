@@ -24,7 +24,7 @@ for i in range(1, n + 1):
     if indegree[i] == 0:
         queue.append(i)  # queuq = 다음에 처리할 건물 번호
 
-# 모든 건물은 최소한 자기 자신을 짓는 시간이 필요하기 때문에 초기화
+# 각 건물의 완성 시간을 자기 건설 시간으로 초기화
 result = build_time.copy()
 
 while queue:
