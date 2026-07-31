@@ -33,7 +33,7 @@ while queue:
 
         # next_node까지 도착하는 거리들이 K개 보다 작으면 저장
         if len(D[next_node]) < k:
-            # -로 저장하는 이유 : heapq가 기본적으로 가장 작은 값을 앞에 두기 때문
+            # -로 저장하는 이유 : heapq가 기본적으로 가장 작은 값을 앞에 두기 때문 (자동으로 오름차순 정렬)
             heapq.heappush(D[next_node], -new_distance)
             heapq.heappush(queue, (new_distance, next_node))
 
