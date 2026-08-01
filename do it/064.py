@@ -22,6 +22,7 @@ for i in range(m):
         D[a][b] = c  # 최솟값 업데이트
 
 # 플로이드-워셜
+# 새로운 경로가 기존 경로보다 짧으면 기존 경로를 업데이트 해준다.
 for k in range(1, n + 1):
     for i in range(1, n + 1):
         for j in range(1, n + 1):
