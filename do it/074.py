@@ -57,3 +57,5 @@ for i in range(M + K):  # N+2 ~ N+M+K+2
         update(b, c)
     else:
         print(sumation(b, c))
+
+# * 인덱스 처리시 // (몫만 구하는 나눗셈) 사용
