@@ -69,7 +69,7 @@ def LCA(a: int, b: int):
         return a
 
     for k in range(K - 1, -1, -1):  # 큰 점프부터 확인하면서
-        if parent[k][a] != parent[k][b]:  # 조상이 다를 때만
+        if parent[k][a] != parent[k][b]:  # 조상이 다를 때만,
             a = parent[k][a]  # 위로 이동
             b = parent[k][b]
     # 마지막 반복문이 끝나면 a,b는 LCA가 아니라 LCA 바로 아래 서로 다른 노드에 존재
