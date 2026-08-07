@@ -55,7 +55,7 @@ else:
             if not visited[j]:
                 cnt += 1
 
-        # 앞에 있는 묶음 수 * 묶음 하나 크기를 더한다.
+        # 내 앞에 몇 개의 순열이 있는지 K에 누적해서 더하는 것
         K += cnt * fac[N - i]
 
         visited[cur] = True
