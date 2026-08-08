@@ -4,8 +4,10 @@ input = sys.stdin.readline
 
 N, M, K = map(int, input().split())
 
+# 크기 = N + M
 dp = [[0] * 201 for _ in range(201)]
 
+# 조합 초기화 nC0 = nCn = 1
 for i in range(201):
     dp[i][0] = 1
     dp[i][i] = 1
@@ -27,6 +29,7 @@ else:
         if M == 0:
             print("a" * N, end="")
             break
+
         # a를 선택했을 때 전체 개수 중(N+M-1) 남아 있는 문자들로 만들 수 있는 경우의 수 (a가 N-1개, z가 M)
         T = dp[N + M - 1][N - 1]  # = dp[N+M-1][M]
         if K <= T:
